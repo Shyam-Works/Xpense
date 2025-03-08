@@ -1,6 +1,4 @@
 import { useState } from "react";
-import InputField from "./InputField";
-import Button from "./Button";
 import { useRouter } from "next/router";
 
 export default function AuthForm({ type }) {
@@ -30,7 +28,7 @@ export default function AuthForm({ type }) {
       setMessage(data.message || data.error);
 
       if (res.ok) {
-        // On successful registration  redirect to login
+        // On successful registration redirect to login
         if (type === "register") {
           setTimeout(() => {
             router.push("/login");
@@ -59,19 +57,7 @@ export default function AuthForm({ type }) {
           {type === "login" ? "Login" : "Register"}
         </h2>
         <form onSubmit={handleSubmit}>
-          {type === "register" && (
-            <div className="mb-3">
-              <label className="form-label">Username</label>
-              <input
-                type="text"
-                className="form-control"
-                value={formData.username}
-                onChange={handleChange}
-                name="username"
-                required
-              />
-            </div>
-          )}
+          {/* Removed the username field */}
           <div className="mb-3">
             <label className="form-label">Email</label>
             <input
@@ -96,10 +82,9 @@ export default function AuthForm({ type }) {
           </div>
           <button
             type="submit"
-            className={`btn w-100 ${
-              type === "login" ? "btn-success" : "btn-success"
-            }` }
-           style={{backgroundColor: "#264653"}}>
+            className={`btn w-100 ${type === "login" ? "btn-success" : "btn-success"}`}
+            style={{ backgroundColor: "#264653" }}
+          >
             {type === "login" ? "Login" : "Register"}
           </button>
         </form>
