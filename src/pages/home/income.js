@@ -139,12 +139,14 @@ export default function IncomePage() {
           >
             Income & Saving
           </h1>
+          
           <div
-            className="w-50 mx-auto"
+            className="w-100 mx-auto"
             style={{
               backgroundColor: "#f1f7ed",
               padding: "20px",
               borderRadius: "10px",
+              maxWidth: "400px"
             }}
           >
             <div className="mb-3" style={{ backgroundColor: "#f1f7ed" }}>
