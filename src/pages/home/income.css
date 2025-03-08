@@ -1,0 +1,12 @@
+
+.right-align {
+    display: flex;
+    justify-content: space-between; /* Push links to the right */
+    width: 100%;
+  }
+  
+  .right-align .navbar-nav {
+    display: flex;
+    gap: 15px; /* Adds spacing between links */
+  }
+  
