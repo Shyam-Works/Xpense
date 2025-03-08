@@ -76,7 +76,7 @@ export default function AuthForm({ type }) {
         </h3>
           <h5 style={{marginBottom: "30px"}}>Navigate Your Financial Journey</h5>
         {/* Login Box */}
-        <div className="card p-4 shadow" style={{ width: "400px" }}>
+        <div className="card p-4 shadow" style={{ width: "350px" }}>
           <h2 className="text-center" style={{ color: "#264653" }}>
             {type === "login" ? "Login" : "Register"}
           </h2>
