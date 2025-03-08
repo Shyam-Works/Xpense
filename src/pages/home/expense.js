@@ -192,7 +192,7 @@ export default function Expense() {
         style={{
           minHeight: "50vh",
           width: "100%",
-          padding: "20px",
+          // padding: "20px",
         }}
       >
         <h1
@@ -203,7 +203,7 @@ export default function Expense() {
         </h1>
 
         {/* Add Expense Form */}
-        <div className="row justify-content-center" style={{backgroundColor: "#f1f7ed", width: "70%", padding: "20px", borderRadius: "10px"}}>
+        <div className="row justify-content-center" style={{backgroundColor: "#f1f7ed", width: "50%", padding: "20px", borderRadius: "10px", minWidth: "350px"}}>
           <div className="col-12">
             {" "}
             {/* Add col-12 for full width */}
