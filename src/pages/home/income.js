@@ -53,6 +53,8 @@ export default function IncomePage() {
         minHeight: "100vh",
         color: "#f1f7ed", // Primary color for the text (60%)
         fontFamily: "'Arial', sans-serif",
+        margin: 0,
+        padding: 0,
       }}
     >
       <div
