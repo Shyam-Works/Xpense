@@ -172,8 +172,8 @@ export default function Dashboard() {
         <div
           className="bg-gradient-to-r from-[#243e36] to-[#7ca982] p-6 rounded-xl shadow-lg flex flex-wrap justify-between items-center"
           style={{
-            color: "#243e36",
-            backgroundColor: "#e9c46a",
+            color: "#f6f7eb",
+            backgroundColor: "#393e41",
             borderRadius: "10px",
           }}
         >
@@ -201,7 +201,9 @@ export default function Dashboard() {
           <div className="flex-1 text-center mb-4 pb-4">
             <h4 className="font-semibold text-xl">Remaining Balance</h4>
             <b>
-              <p className="text-2xl font-bold">${data?.remainingAmount}</p>
+              <p className="text-2xl font-bold">
+                ${data?.remainingAmount?.toFixed(2)}
+              </p>
             </b>
           </div>
         </div>
@@ -242,7 +244,7 @@ export default function Dashboard() {
                 outerRadius={80}
                 fill="#8884d8"
                 dataKey="value"
-                label
+                label={({ name, value }) => `${name}: ${value.toFixed(2)}`} // Ensuring two decimal places
               >
                 {expenseData.map((_, index) => (
                   <Cell
@@ -254,12 +256,10 @@ export default function Dashboard() {
               <Tooltip />
               <Legend
                 layout="horizontal"
-                align="center" // Centers the legend horizontally
-                verticalAlign="bottom" // Positions the legend at the bottom
-                iconType="circle" // Uses circle icons for each category
-                wrapperStyle={{
-                  paddingTop: "20px", // Adds space between the pie chart and the legend
-                }}
+                align="center"
+                verticalAlign="bottom"
+                iconType="circle"
+                wrapperStyle={{ paddingTop: "20px" }}
               />
             </PieChart>
           </ResponsiveContainer>
