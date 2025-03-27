@@ -59,7 +59,7 @@ export default function AuthForm({ type }) {
   return (
     <div
       className="container-fluid d-flex justify-content-center align-items-center vh-100"
-      style={{ backgroundColor: "#e9c46a" }}
+      style={{ backgroundColor: "#f1f7ed" }}
     >
       {/* Wrap the heading and login box in a single div */}
       <div className="d-flex flex-column align-items-center">
