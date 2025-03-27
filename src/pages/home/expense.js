@@ -132,7 +132,7 @@ export default function Expense() {
   return (
     <div
       className="container-fluid"
-      style={{ margin: 0, padding: 0, boxSizing: "border-box", width: "100%" , backgroundColor: "#e9c46a"}}
+      style={{ margin: 0, padding: 0, boxSizing: "border-box", width: "100%" , backgroundColor: "#f1f7ed"}}
     >
       <div className="nav-container" style={{ backgroundColor: "#264653" }}>
         <nav className="navbar navbar-expand-lg navbar-dark">
@@ -303,7 +303,7 @@ export default function Expense() {
                 key={expense._id}
                 className="list-group-item mb-3"
                 style={{
-                  backgroundColor: "#fdfffc",
+                  backgroundColor: "#f1f7ed",
                   color: "#000000",
                   borderRadius: "10px",
                   border: "#7ca982",
@@ -339,7 +339,7 @@ export default function Expense() {
             <button
               onClick={loadMoreExpenses}
               className="btn btn-outline-secondary"
-              style={{ backgroundColor: "#e9c46a", color: "#364653", marginBottom: "20px" }}
+              style={{ backgroundColor: "#f1f7ed", color: "#364653", marginBottom: "20px" }}
             >
               Load More
             </button>
