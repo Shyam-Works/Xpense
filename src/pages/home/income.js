@@ -49,7 +49,7 @@ export default function IncomePage() {
     <div
       className="container-fluid"
       style={{
-        backgroundColor: "#e9c46a", // Secondary color for the background (30%)
+        backgroundColor: "#f1f7ed", // Secondary color for the background (30%)
         minHeight: "100vh",
         color: "#f1f7ed", // Primary color for the text (60%)
         fontFamily: "'Arial', sans-serif",
@@ -64,7 +64,7 @@ export default function IncomePage() {
           padding: 0,
           boxSizing: "border-box",
           width: "100%",
-          backgroundColor: "#e9c46a",
+          backgroundColor: "#f1f7ed",
         }}
       >
         <div className="nav-container" style={{ backgroundColor: "#264653" }}>
